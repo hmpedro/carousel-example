@@ -1,143 +1,143 @@
 :root {
-	--product-width: 172px;
-	--product-padding: 5px;
+    --product-width: 172px;
+    --product-padding: 5px;
 }
 
 html {
-	font-family: 'Open sans'
+    font-family: 'Open sans'
 }
 
 .showcase {
-	display: flex;
-	max-width: 866px;
-	margin: auto;
-	margin-top: 50px;
-	border: 1px solid #e5f1fb;
+    display: flex;
+    max-width: 866px;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid #e5f1fb;
 }
 
 .header {
-	background-color: #e5f1fb;
-	color: #18709c;
-	padding: 5px;
+    background-color: #e5f1fb;
+    color: #18709c;
+    padding: 5px;
 }
 
 .product-reference {
-	height: 100%;
-	border-right: 1px solid #e5f1fb;
+    height: 100%;
+    border-right: 1px solid #e5f1fb;
 }
 
 .product-reference__container {
-	padding: 0 var(--product-padding);
+    padding: 0 var(--product-padding);
 }
 
 .products-list {
-	flex: 1;
-	width: 546px;
+    flex: 1;
+    width: 546px;
     height: 100%;
 }
 
 .product {
-	width: var(--product-width);
-	padding: var(--product-padding);
-	display: flex;
+    width: var(--product-width);
+    padding: var(--product-padding);
+    display: flex;
     flex-direction: column;
     text-decoration: none;
 }
 
 .product:hover {
-	background: linear-gradient(to bottom , #e5f1fb, #fff);
+    background: linear-gradient(to bottom , #e5f1fb, #fff);
 }
 
 .product__title {
-	color: #000;
+    color: #000;
     font-size: 13px;
     line-height: 15px;
 }
 
 .product__old-price {
-	color: #000;
+    color: #000;
     font-size: 12px;
     line-height: 15px;
     margin-top: 6px;
 }
 
 .product__price {
-	color: #cf0000;
-	margin-top: 3px;
-	font-size: 15px;
+    color: #cf0000;
+    margin-top: 3px;
+    font-size: 15px;
     line-height: 15px;
 }
 
 .product__condition {
-	color: #cf0000;
-	margin-top: 3px;
-	font-size: 12px;
+    color: #cf0000;
+    margin-top: 3px;
+    font-size: 12px;
     line-height: 15px;
 }
 
 .carousel {
-	display: flex;
-	justify-content: space-around;
-	height: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
 }
 
 .carousel-container {
-	height: 100%;
-	width: 546px;
-	overflow: hidden;
+    height: 100%;
+    width: 546px;
+    overflow: hidden;
 }
 
 .carousel-container>ul {
-	list-style-type: none;
-	height: 100%;
-	margin: 0px; 
-	padding: 0px;		
-	transition: 0.6s linear;
+    list-style-type: none;
+    height: 100%;
+    margin: 0px; 
+    padding: 0px;        
+    transition: 0.6s linear;
 }
 
 .carousel-item {
-	display: inline-block;
+    display: inline-block;
 }
 
 .arrow-container {
-	width: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .left-arrow {
-	font-size: 30px;    
-	line-height: 1.5;
-	color: #adadad;
-	transition: font-size 0.1s linear, color 0.1s linear;
+    font-size: 30px;    
+    line-height: 1.5;
+    color: #adadad;
+    transition: font-size 0.1s linear, color 0.1s linear;
 }
 
 .left-arrow:hover {
-	font-size: 31px;    
-	cursor: pointer;
-	color: #074c8d;
+    font-size: 31px;    
+    cursor: pointer;
+    color: #074c8d;
 }
 
 .left-arrow:before {
-	content: "\f060"; 
+    content: "\f060"; 
     font-family: FontAwesome;
 }
 
 .right-arrow {
-	font-size: 30px;
-	line-height: 1.5;
-	color: #adadad;
-	transition: font-size 0.1s linear, color 0.1s linear;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #adadad;
+    transition: font-size 0.1s linear, color 0.1s linear;
 }
 
 .right-arrow:hover {
-	font-size: 31px;    
-	cursor: pointer;
-	color: #074c8d;
+    font-size: 31px;    
+    cursor: pointer;
+    color: #074c8d;
 }
 
 .right-arrow:before {
-	content: "\f061"; 
+    content: "\f061"; 
     font-family: FontAwesome;
 }

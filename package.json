@@ -1,0 +1,23 @@
+{
+  "name": "carousel-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmpedro/carousel-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hmpedro/carousel-example/issues"
+  },
+  "homepage": "https://github.com/hmpedro/carousel-example#readme",
+  "dependencies": {
+    "serve": "^6.2.0"
+  }
+}

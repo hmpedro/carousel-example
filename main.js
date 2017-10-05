@@ -1,15 +1,15 @@
 function buildProduct(product) {
   var productDiv = document.createElement('a');
-	productDiv.className  = 'product';
-	productDiv.setAttribute('href', 'http:'+product.detailUrl);
+  productDiv.className  = 'product';
+  productDiv.setAttribute('href', product.detailUrl);
 
   if(product.imageName){
     var productImg = document.createElement('img');
     productImg.className  = 'product__img';
-    productImg.src = 'http:'+product.imageName;
+    productImg.src = product.imageName;
     productDiv.appendChild(productImg);
   }
-	
+  
   if(product.name) {
     var productTittle = document.createElement('div');
     productTittle.className  = 'product__title';
@@ -20,7 +20,7 @@ function buildProduct(product) {
     }
     productTittle.innerHTML = subTitle;
     productDiv.appendChild(productTittle);
-  }	
+  }  
 
   if(product.oldPrice) {
     var productOldPrice = document.createElement('div');
@@ -35,39 +35,39 @@ function buildProduct(product) {
     productPrice.innerHTML = '<small>Por:</small> <b>' + product.price + '</b>';
     productDiv.appendChild(productPrice);
   }
-	
+  
   if(product.productInfo && product.productInfo.paymentConditions) {
     var productCondition = document.createElement('div');
     productCondition.className  = 'product__condition';  
     productCondition.innerHTML = product.productInfo.paymentConditions + '<br> sem juros';   
     productDiv.appendChild(productCondition);
-  }	
+  }  
 
-	return productDiv;
+  return productDiv;
 }
 
 function buildProductsList(productList) {
-	var productListHtml = document.createElement('div');
+  var productListHtml = document.createElement('div');
   productListHtml.className  = 'carousel-container';
   var productListUl = document.createElement('ul');
 
-	if (!productList) {
-		return productListUl.innerHTML = 'Não foi possível carregar a listagem';
-	}
+  if (!productList) {
+    return productListUl.innerHTML = 'Não foi possível carregar a listagem';
+  }
 
-	for (var i = 0, len = productList.length; i < len; i++) {
+  for (var i = 0, len = productList.length; i < len; i++) {
     var productLi = document.createElement('li');
     productLi.className = 'carousel-item';
     productLi.appendChild(buildProduct(productList[i]));
-  	productListUl.appendChild(productLi);
-	}
+    productListUl.appendChild(productLi);
+  }
 
   productListHtml.appendChild(productListUl);
-	return productListHtml;
+  return productListHtml;
 }
 
 function createProductListHTML(carouselData) {
-	var carousel = document.getElementsByClassName('carousel')[0];
+  var carousel = document.getElementsByClassName('carousel')[0];
 
   var leftArrowContainer = document.createElement('div');
   leftArrowContainer.className  = 'arrow-container';
@@ -89,7 +89,7 @@ function createProductListHTML(carouselData) {
 }
 
 function createReferenceProduct(referenceData) {
-	document.getElementsByClassName('product-reference__container')[0].appendChild(buildProduct(referenceData));
+  document.getElementsByClassName('product-reference__container')[0].appendChild(buildProduct(referenceData));
 }
 
 function X(data) {
@@ -98,7 +98,7 @@ function X(data) {
 }
 
 var tag = document.createElement('script');
-tag.src = 'http://roberval.chaordicsystems.com/challenge/challenge.json?callback=X';
+tag.src = '//roberval.chaordicsystems.com/challenge/challenge.json?callback=X';
 document.getElementsByTagName('head')[0].appendChild(tag);
 
 function createCarousel() {
@@ -114,7 +114,6 @@ function createCarousel() {
 
     carousel.carouselContainerUl.style.width = (carousel.items.length*182)+'px';
 
-
     carousel.buttons = {
       'prev': carousel.container.querySelector('.left-arrow'),
       'next': carousel.container.querySelector('.right-arrow')
@@ -125,7 +124,6 @@ function createCarousel() {
     (function(carousel){
       carousel.buttons.prev.addEventListener('click', function(e){ carouselPrev(carousel); });
       carousel.buttons.next.addEventListener('click', function(e){ carouselNext(carousel); });
-
     })(carousel);
   }
 }
