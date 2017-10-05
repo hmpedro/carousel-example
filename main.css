@@ -91,7 +91,7 @@ html {
     list-style-type: none;
     height: 100%;
     margin: 0px; 
-    padding: 0px;        
+    padding: 0px;
     transition: 0.6s linear;
 }
 
@@ -107,14 +107,14 @@ html {
 }
 
 .left-arrow {
-    font-size: 30px;    
+    font-size: 30px;
     line-height: 1.5;
     color: #adadad;
     transition: font-size 0.1s linear, color 0.1s linear;
 }
 
 .left-arrow:hover {
-    font-size: 31px;    
+    font-size: 31px;
     cursor: pointer;
     color: #074c8d;
 }
@@ -132,7 +132,7 @@ html {
 }
 
 .right-arrow:hover {
-    font-size: 31px;    
+    font-size: 31px;
     cursor: pointer;
     color: #074c8d;
 }
