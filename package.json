@@ -17,7 +17,8 @@
     "url": "https://github.com/hmpedro/carousel-example/issues"
   },
   "homepage": "https://github.com/hmpedro/carousel-example#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "serve": "^6.2.0"
   }
 }
